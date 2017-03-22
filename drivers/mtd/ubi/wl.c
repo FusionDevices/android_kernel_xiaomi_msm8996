@@ -398,7 +398,7 @@ static struct ubi_wl_entry *wl_get_wle(struct ubi_device *ubi)
 	 */
 	rb_erase(&e->u.rb, &ubi->free);
 	ubi->free_count--;
-	dbg_wl("PEB %d EC %d", e->pnum, e->ec);
+	dbg_wl("PEB %d EC %d", e->pnum, e->ec)
 
 	return e;
 }
